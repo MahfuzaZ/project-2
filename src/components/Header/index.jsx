@@ -12,10 +12,10 @@ function Header() {
                 <h3>Apple</h3>
             </div>
             <ul>
-                <li><NavLink exact="true" activeclassname="active" to="/">Home</NavLink></li>
-                <li><NavLink activeclassname="active" to='/about'>About</NavLink></li>
-                <li><NavLink activeclassname="active" to="/products">Our Products</NavLink></li>
-                <li><NavLink activeclassname="active" to="singleproducts">Contact</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? sass.active : sass.link} to="/">Home</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? sass.active : sass.link} to='/about'>About</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? sass.active : sass.link} to="/products">Our Products</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? sass.active : sass.link} to="singleproducts">Contact</NavLink></li>
             </ul>
         </header>
     </div>

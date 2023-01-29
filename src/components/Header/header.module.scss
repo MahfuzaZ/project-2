@@ -32,18 +32,21 @@ html{
             gap: 3rem;
     
             li{
-                a{
+                .link{
                     cursor: pointer;
                     font-weight: 600;
                     font-size: 1.6rem;
                     color: #fff;
                     opacity: 0.6;
-                    &:hover{
-                        opacity: 1;
-                    }
                 }
-             
 
+                .active{
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    color: #fff;
+                    opacity: 1;
+                }
             }
         }
     
@@ -59,12 +62,6 @@ html{
         }
     }
 }
-
-a.active{
-    color: #fff;
-    opacity: 1;
-}
-
 
 
 

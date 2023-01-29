@@ -1,8 +1,11 @@
 import React from 'react'
+import sass from "../main.module.scss"
 
 function Products() {
   return (
-    <div>Products</div>
+    <div className={sass.product}>
+       
+    </div>
   )
 }
 
